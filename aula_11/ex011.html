@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Qual Seu País? <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Validar" onclick="resposta()">
+    <div  id="res"></div>
+    <script>
+        function resposta() {
+            var nac = document.getElementById('txtnac')
+
+            var res = document.getElementById('res')
+        
+            var result = nac.value.toUpperCase()
+            
+            res.innerHTML = `Você vive no país ${ result } !!`
+            if (result != 'BRASIL') {
+                res.innerHTML += `<p>Você é <strong>Extrangeiro !!` 
+                
+            } else {
+                res.innerHTML += `<p>Você é <strong>Brasileiro !!`  
+                
+            }
+
+
+            
+        }
+        
+
+    </script>
+    
+</body>
+</html>
