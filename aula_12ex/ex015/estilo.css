@@ -3,10 +3,6 @@ body{
     font: normal 15pt arial;
 
 }
-div{
-    text-align: center;
-    padding: 10px;
-}
 header{
     color: white;
     text-align: center;
@@ -24,4 +20,7 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+div#res{
+    text-align: center;
 }
